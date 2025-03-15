@@ -1,0 +1,29 @@
+#include<stdio.h>
+int compare1, compare2, position;
+
+
+minimum_element()
+{
+    int element[10]={2,6,7,12,34,22,21,8,100,13};
+    for(compare1 = 0; compare1<10; compare1++)
+    {   
+        for(compare2 = 0; compare2<10; compare2++)
+        {
+            if(element[compare1] < element[compare2])
+            {
+                position = compare1;
+            }
+            else
+            {
+                position = compare2;
+            }
+        }
+    }
+    printf("%d\n", position);
+}
+
+int main()
+{
+    minimum_element();
+    return 0;
+}
